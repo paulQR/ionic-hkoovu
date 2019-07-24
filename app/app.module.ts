@@ -3,17 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { Tab1Page } from './pages/tab1/tab1';
+import { Tab2Page } from './pages/tab2/tab2';
+import { TabsPage } from './pages/tabs/tabs';
+
+// servicios
+import { DeseosService } from './services/deseos.service';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    Tab1Page,
+    Tab2Page,
     TabsPage
   ],
   imports: [
@@ -23,12 +24,12 @@ import { TabsPage } from '../pages/tabs/tabs';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    Tab1Page,
+    Tab2Page,
     TabsPage
   ],
   providers: [
+    DeseosService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

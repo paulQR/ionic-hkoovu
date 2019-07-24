@@ -1,0 +1,21 @@
+<ion-header no-border>
+  <ion-navbar color="dark">
+    <ion-title>Pendientes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background: #222428 !important;">
+      <ion-list style="background-color: #222428 !important;">  
+          <ion-item *ngFor="let lista of deseosService.listas" color="dark">
+              <ion-label>{{lista.titulo}}</ion-label>
+          </ion-item>       
+      </ion-list>
+
+<!--
+      <ion-fab vertical="top" horizontal="end" slot="fixed">
+        <ion-fab-button>
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>   
+      -->   
+</ion-content>
