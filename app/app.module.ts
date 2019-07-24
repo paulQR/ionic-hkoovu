@@ -10,6 +10,9 @@ import { TabsPage } from './pages/tabs/tabs';
 // servicios
 import { DeseosService } from './services/deseos.service';
 
+// importar rutas
+import { ROUTES } from './app.routes';
+
 @NgModule({
   declarations: [
     MyApp,
