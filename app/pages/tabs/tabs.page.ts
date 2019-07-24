@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
-import { Tab2Page } from '../tab2/tab2';
-import { Tab1Page } from '../tab1/tab1';
+import { Tab2Page } from '../tab2/tab2.page';
+import { Tab1Page } from '../tab1/tab1.page';
 
 @Component({
-  templateUrl: 'tabs.html'
+  templateUrl: 'tabs.page.html'
 })
 export class TabsPage {
 

@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { DeseosService } from '../../services/deseos.service';
 
 @Component({
-  selector: 'page-tab2',
-  templateUrl: 'tab2.html'
+  selector: 'page-tab1',
+  templateUrl: 'tab1.page.html'
 })
-export class Tab2Page {
+export class Tab1Page {
 
   constructor(public deseosService: DeseosService) {
+
   }
 
 }
